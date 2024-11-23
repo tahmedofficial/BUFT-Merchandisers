@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner/Banner";
 import "./globals.css";
 import { Cormorant } from "next/font/google";
 
@@ -11,9 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={cormorant.className}>
+      <body className={`${cormorant.className} font-medium text-lg`}>
         <header>
-
+          <Banner></Banner>
         </header>
         <main>
           {children}

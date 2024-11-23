@@ -8,10 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primaryColor: "#CEBD88",
+        btnColor: "#CEBD88",
+        textColor: "#28364B",
+        background: "#F1F0E8",
+        foreground: "#28364B",
       },
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 };
