@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner/Banner";
 import "./globals.css";
 import { Cormorant } from "next/font/google";
+import Footer from "@/components/Footer/Footer";
 
 const cormorant = Cormorant({ weight: ["300", "400", "500", "600", "700"], subsets: ["latin"] })
 
@@ -12,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${cormorant.className} font-medium text-lg`}>
+      <body className={`${cormorant.className} font-medium text-lg bg-background`}>
         <header>
           <Banner></Banner>
         </header>
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <footer>
-
+          <Footer></Footer>
         </footer>
       </body>
     </html>

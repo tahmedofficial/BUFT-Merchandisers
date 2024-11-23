@@ -4,28 +4,29 @@ import { useState } from "react";
 import MenuToggle from './MenuToggle';
 
 
+export const navItem = [
+    {
+        title: "Home",
+        path: "/"
+    },
+    {
+        title: "Events",
+        path: "/events"
+    },
+    {
+        title: "Blog",
+        path: "/blog"
+    },
+    {
+        title: "Gallery",
+        path: "/gallery"
+    }
+]
+
 const Navbar = () => {
 
     const [isOpen, setOpen] = useState(false)
 
-    const navItem = [
-        {
-            title: "Home",
-            path: "/"
-        },
-        {
-            title: "Events",
-            path: "/events"
-        },
-        {
-            title: "Blog",
-            path: "/blog"
-        },
-        {
-            title: "Gallery",
-            path: "/gallery"
-        }
-    ]
 
     return (
         <div>

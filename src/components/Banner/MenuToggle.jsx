@@ -2,6 +2,7 @@
 import { stagger, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Sling as Hamburger } from 'hamburger-react';
+import { navItem } from "./Navbar";
 
 const useMenuAnimation = (isOpen) => {
 
@@ -49,7 +50,7 @@ const useMenuAnimation = (isOpen) => {
     return scope;
 }
 
-const MenuToggle = ({ isOpen, setOpen, navItem }) => {
+const MenuToggle = ({ isOpen, setOpen }) => {
 
     const [isClosed, setClosed] = useState(false)
     const scope = useMenuAnimation(isOpen);
@@ -66,7 +67,7 @@ const MenuToggle = ({ isOpen, setOpen, navItem }) => {
             <nav className={isClosed ? "bg-black bg-opacity-80 absolute z-10 w-full md:w-80 md:rounded-r-lg h-full pl-5" : "hidden"}>
                 <ul className="space-y-2 text-white">
                     <li className="mt-5 [transform-origin:-20px_50%]"><Hamburger size={20} toggled={isOpen} toggle={setOpen} /></li>
-                    {navItem.map(item => <li className="[transform-origin:-20px_50%]" key={item.path}>{item.title}</li>)}
+                    {navItem.map(item => <li onClick={() => setOpen(false)} className="[transform-origin:-20px_50%]" key={item.path}>{item.title}</li>)}
                 </ul>
             </nav>
         </div>
