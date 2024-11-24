@@ -1,9 +1,10 @@
-import Image from "next/image";
+import Location from "@/components/Components/Location";
 
 export default function Home() {
+
   return (
     <section>
-      Explore
+      <Location></Location>
     </section>
   );
 }

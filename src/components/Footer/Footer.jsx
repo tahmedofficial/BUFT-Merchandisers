@@ -10,7 +10,6 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 
-
 const Footer = () => {
 
     return (
@@ -24,19 +23,19 @@ const Footer = () => {
                         <h3 className="hidden lg:block">Facebook</h3>
                     </div>
                     <div className="flex gap-4 items-center">
-                        <Link className="border p-4 rounded-full text-xl hover:bg-btnColor duration-500" href="https://www.facebook.com/buftmerchandisingclub">
+                        <Link className="border p-4 rounded-full text-xl hover:bg-btnColor duration-500" href="https://www.linkedin.com/company/buft-merchandising-club/">
                             <FaLinkedinIn />
                         </Link>
                         <h3 className="hidden lg:block">Linkedin</h3>
                     </div>
                     <div className="flex gap-4 items-center">
-                        <Link className="border p-4 rounded-full text-xl hover:bg-btnColor duration-500" href="https://www.instagram.com/buft.bmc">
+                        <Link className="border p-4 rounded-full text-xl hover:bg-btnColor duration-500" href="">
                             <FaXTwitter />
                         </Link>
                         <h3 className="hidden lg:block">X</h3>
                     </div>
                     <div className="flex gap-4 items-center">
-                        <Link className="border p-4 rounded-full text-xl hover:bg-btnColor duration-500" href="https://www.instagram.com/buft.bmc">
+                        <Link className="border p-4 rounded-full text-xl hover:bg-btnColor duration-500" href="https://www.instagram.com/buft.bmc/">
                             <FaInstagram />
                         </Link>
                         <h3 className="hidden lg:block">Instagram</h3>

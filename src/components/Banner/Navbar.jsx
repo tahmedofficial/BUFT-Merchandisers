@@ -2,6 +2,8 @@
 import { Sling as Hamburger } from 'hamburger-react';
 import { useState } from "react";
 import MenuToggle from './MenuToggle';
+import Link from 'next/link';
+import Button from '../Components/Button';
 
 
 export const navItem = [
@@ -20,6 +22,10 @@ export const navItem = [
     {
         title: "Gallery",
         path: "/gallery"
+    },
+    {
+        title: "About Us",
+        path: "/aboutUs"
     }
 ]
 
@@ -41,11 +47,11 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex gap-5">
-                        {navItem.map(item => <li key={item.path}>{item.title}</li>)}
+                        {navItem.map(item => <li key={item.path}><Link href={item.path}>{item.title}</Link></li>)}
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <Button text="Login"></Button>
                 </div>
             </div>
         </div>
