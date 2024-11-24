@@ -4,6 +4,7 @@ import { useState } from "react";
 import MenuToggle from './MenuToggle';
 import Link from 'next/link';
 import Button from '../Components/Button';
+import { usePathname } from 'next/navigation';
 
 
 export const navItem = [
@@ -26,18 +27,23 @@ export const navItem = [
     {
         title: "About Us",
         path: "/aboutUs"
+    },
+    {
+        title: "Contact",
+        path: "/contactUs"
     }
 ]
 
 const Navbar = () => {
 
     const [isOpen, setOpen] = useState(false)
+    const pathName = usePathname();
 
 
     return (
-        <div>
+        <div className='md:w-5/6 mx-auto'>
             <div className='lg:hidden'>
-                <MenuToggle isOpen={isOpen} setOpen={setOpen} navItem={navItem}></MenuToggle>
+                <MenuToggle isOpen={isOpen} setOpen={setOpen} pathName={pathName}></MenuToggle>
             </div>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
@@ -46,8 +52,8 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="flex gap-5">
-                        {navItem.map(item => <li key={item.path}><Link href={item.path}>{item.title}</Link></li>)}
+                    <ul className="flex gap-10 text-lg">
+                        {navItem.map(item => <li className={item.path === pathName ? "text-btnColor" : ""} key={item.path}><Link href={item.path}>{item.title}</Link></li>)}
                     </ul>
                 </div>
                 <div className="navbar-end">

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import logo from "../../app/BMC-logo.jpg";
+import logo from "../../images/BMC-logo-removebg.png";
 import Image from "next/image";
 import { navItem } from "../Banner/Navbar";
 import { MdEmail } from "react-icons/md";
@@ -13,7 +13,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
 
     return (
-        <div className="bg-foreground text-white">
+        <div className="bg-[#383737] text-white">
             <div className="border-b border-gray-400">
                 <div className="flex justify-around py-12 md:w-5/6 mx-auto">
                     <div className="flex gap-4 items-center">
@@ -46,14 +46,14 @@ const Footer = () => {
                 <div className="flex flex-col lg:flex-row gap-8 justify-around">
                     <div>
                         <Image className="rounded-2xl" width="100" height="auto" src={logo} alt="Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club"></Image>
-                        <h3 className="lg:w-96 text-sm text-zinc-300">Join the BUFT Merchandising Club—a vibrant space for creativity, networking, and industry leadership in fashion and textiles. Connect with like-minded innovators, stay updated on events and opportunities, and build lasting relationships. Shape your future while transforming the world of merchandising</h3>
+                        <h3 className="lg:w-96 text-sm text-zinc-300 mt-5">Join the BUFT Merchandising Club—a vibrant space for creativity, networking, and industry leadership in fashion and textiles. Connect with like-minded innovators, stay updated on events and opportunities, and build lasting relationships. Shape your future while transforming the world of merchandising</h3>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <h1 className="text-3xl font-bold">Links</h1>
+                        <h1 className="text-3xl font-medium">Links</h1>
                         {navItem?.map(item => <Link className="text-zinc-300" href={item.path} key={item.path}>{item.title}</Link>)}
                     </div>
                     <div className="flex flex-col gap-3">
-                        <h1 className="text-3xl font-bold">Contact</h1>
+                        <h1 className="text-3xl font-medium">Contact</h1>
                         <div className="flex items-center gap-3">
                             <span><MdEmail className="text-xl" /></span>
                             <h3 className="text-zinc-300">bmc@info.com</h3>

@@ -3,6 +3,7 @@ import { stagger, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Sling as Hamburger } from 'hamburger-react';
 import { navItem } from "./Navbar";
+import Link from "next/link";
 
 const useMenuAnimation = (isOpen) => {
 
@@ -50,7 +51,7 @@ const useMenuAnimation = (isOpen) => {
     return scope;
 }
 
-const MenuToggle = ({ isOpen, setOpen }) => {
+const MenuToggle = ({ isOpen, setOpen, pathName }) => {
 
     const [isClosed, setClosed] = useState(false)
     const scope = useMenuAnimation(isOpen);
@@ -59,15 +60,28 @@ const MenuToggle = ({ isOpen, setOpen }) => {
         const timer = setTimeout(() => {
             setClosed(true);
         }, 900);
-        return () => clearTimeout(timer);
-    }, []);
+
+        if (isOpen) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
+
+        return () => {
+            clearTimeout(timer);
+            document.body.classList.remove("overflow-hidden");
+        };
+
+    }, [isOpen]);
 
     return (
         <div ref={scope}>
             <nav className={isClosed ? "bg-black bg-opacity-80 absolute z-10 w-full md:w-80 md:rounded-r-lg h-full pl-5" : "hidden"}>
                 <ul className="space-y-2 text-white">
                     <li className="mt-5 [transform-origin:-20px_50%]"><Hamburger size={20} toggled={isOpen} toggle={setOpen} /></li>
-                    {navItem.map(item => <li onClick={() => setOpen(false)} className="[transform-origin:-20px_50%]" key={item.path}>{item.title}</li>)}
+                    {navItem.map(item => <li onClick={() => setOpen(false)} className={item.path === pathName ? "border-b w-40" : ""} style={{ transformOrigin: '-20px 50%' }} key={item.path}>
+                        <Link href={item.path}>{item.title}</Link>
+                    </li>)}
                 </ul>
             </nav>
         </div>

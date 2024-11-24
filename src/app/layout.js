@@ -1,9 +1,9 @@
 import Banner from "@/components/Banner/Banner";
 import "./globals.css";
-import { Cormorant } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Footer from "@/components/Footer/Footer";
 
-const cormorant = Cormorant({ weight: ["300", "400", "500", "600", "700"], subsets: ["latin"] })
+const montserrat = Montserrat({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] })
 
 export const metadata = {
   title: "BUFT Merchandising Club",
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${cormorant.className} font-medium text-lg bg-background`}>
+      <body className={`${montserrat.className} font-medium bg-background`}>
         <header>
           <Banner></Banner>
         </header>
