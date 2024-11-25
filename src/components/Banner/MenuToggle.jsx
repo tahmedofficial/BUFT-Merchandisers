@@ -2,8 +2,11 @@
 import { stagger, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Sling as Hamburger } from 'hamburger-react';
+import logo from "../../images/BMC-logo.png"
 import { navItem } from "./Navbar";
 import Link from "next/link";
+import Image from "next/image";
+
 
 const useMenuAnimation = (isOpen) => {
 
@@ -29,7 +32,7 @@ const useMenuAnimation = (isOpen) => {
                     { transform: "scale(0.5)", opacity: 0, filter: "blur(10px)" },
                     { delay: stagger(0.05, { from: "last" }), at: "<" }
                 ],
-                ["nav", { transform: "translateX(-100%)" }, { at: "0.1" }]
+                ["nav", { transform: "translateX(-120%)" }, { at: "0.1" }]
             ];
 
         animate([
@@ -76,10 +79,17 @@ const MenuToggle = ({ isOpen, setOpen, pathName }) => {
 
     return (
         <div ref={scope}>
-            <nav className={isClosed ? "bg-black bg-opacity-80 absolute z-10 w-full md:w-80 md:rounded-r-lg h-full pl-5" : "hidden"}>
+            <nav className={isClosed ? "bg-foreground absolute z-10 w-full h-full px-5" : "hidden"}>
+                <div className="relative">
+                    <div className="flex justify-center p-5">
+                        <Image src={logo} width="150" height="auto" alt='Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club'></Image>
+                    </div>
+                    <div className="absolute top-16 text-white bg-btnColor">
+                        <Hamburger size={24} toggled={isOpen} toggle={setOpen} />
+                    </div>
+                </div>
                 <ul className="space-y-2 text-white">
-                    <li className="mt-5 [transform-origin:-20px_50%]"><Hamburger size={20} toggled={isOpen} toggle={setOpen} /></li>
-                    {navItem.map(item => <li onClick={() => setOpen(false)} className={item.path === pathName ? "border-b w-40" : ""} style={{ transformOrigin: '-20px 50%' }} key={item.path}>
+                    {navItem.map(item => <li onClick={() => setOpen(false)} className={item.path === pathName ? "bg-btnColor py-2 px-3" : ""} style={{ transformOrigin: '-20px 50%' }} key={item.path}>
                         <Link href={item.path}>{item.title}</Link>
                     </li>)}
                 </ul>

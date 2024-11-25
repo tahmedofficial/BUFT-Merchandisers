@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import logo from "../../images/BMC-logo-removebg.png";
+import logo from "../../images/BMC-logo.png";
 import Image from "next/image";
 import { navItem } from "../Banner/Navbar";
 import { MdEmail } from "react-icons/md";
@@ -13,7 +13,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
 
     return (
-        <div className="bg-[#383737] text-white">
+        <div className="bg-foreground text-white">
             <div className="border-b border-gray-400">
                 <div className="flex justify-around py-12 md:w-5/6 mx-auto">
                     <div className="flex gap-4 items-center">
@@ -45,7 +45,7 @@ const Footer = () => {
             <div className="md:w-5/6 mx-auto px-4 lg:px-0 pt-12">
                 <div className="flex flex-col lg:flex-row gap-8 justify-around">
                     <div>
-                        <Image className="rounded-2xl" width="100" height="auto" src={logo} alt="Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club"></Image>
+                        <Image className="rounded-2xl" width="120" height="auto" src={logo} alt="Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club"></Image>
                         <h3 className="lg:w-96 text-sm text-zinc-300 mt-5">Join the BUFT Merchandising Club—a vibrant space for creativity, networking, and industry leadership in fashion and textiles. Connect with like-minded innovators, stay updated on events and opportunities, and build lasting relationships. Shape your future while transforming the world of merchandising</h3>
                     </div>
                     <div className="flex flex-col gap-2">
