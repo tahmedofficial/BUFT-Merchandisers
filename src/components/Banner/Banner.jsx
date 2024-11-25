@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Navbar from "./Navbar";
 import logo from "../../images/BMC-logo-removebg.png"
@@ -5,9 +6,13 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import BannerTitle from "../Components/BannerTitle";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 
 const Banner = () => {
+
+    const pathName = usePathname();
+
     return (
         <div>
             <div className="hidden lg:block">
@@ -40,7 +45,11 @@ const Banner = () => {
                 </div>
             </div>
             <Navbar></Navbar>
-            <BannerTitle title="Contact Us" description="Get in touch"></BannerTitle>
+            {pathName === "/events" ? <BannerTitle title="Events" description="Discover upcoming events"></BannerTitle> : undefined}
+            {pathName === "/blog" ? <BannerTitle title="Blog" description="Read our latest blogs"></BannerTitle> : undefined}
+            {pathName === "/gallery" ? <BannerTitle title="Gallery" description="View our gallery"></BannerTitle> : undefined}
+            {pathName === "/aboutUs" ? <BannerTitle title="About Us" description="About our club"></BannerTitle> : undefined}
+            {pathName === "/contactUs" ? <BannerTitle title="Contact Us" description="Get in touch"></BannerTitle> : undefined}
         </div>
     );
 };

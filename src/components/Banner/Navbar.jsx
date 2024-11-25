@@ -38,18 +38,18 @@ export const navItem = [
 
 const Navbar = () => {
 
-    const [isOpen, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(false);
     const pathName = usePathname();
 
 
     return (
-        <div className='md:w-5/6 mx-auto bg-white'>
+        <div className='md:w-5/6 mx-auto bg-white py-1'>
             <div className='lg:hidden'>
                 <MenuToggle isOpen={isOpen} setOpen={setOpen} pathName={pathName}></MenuToggle>
             </div>
             <div className="navbar">
                 <div className="navbar-start">
-                    <div className={isOpen ? "hidden text-black" : "lg:hidden"}>
+                    <div className={isOpen ? "hidden text-black" : "lg:hidden text-black"}>
                         <Hamburger size={20} toggled={isOpen} toggle={setOpen} />
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className='lg:hidden'>
-                    <Image src={logo} width="70" height="auto" alt='Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club'></Image>
+                    <Image src={logo} width="80" height="auto" alt='Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club'></Image>
                 </div>
                 <div className="navbar-end">
                     <Button text="Login"></Button>
