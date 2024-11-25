@@ -16,22 +16,27 @@ export const navItem = [
     },
     {
         title: "Events",
+        description: "Discover upcoming events",
         path: "/events"
     },
     {
         title: "Blog",
+        description: "Read our latest blogs",
         path: "/blog"
     },
     {
         title: "Gallery",
+        description: "View our gallery",
         path: "/gallery"
     },
     {
         title: "About Us",
+        description: "About our club",
         path: "/aboutUs"
     },
     {
         title: "Contact",
+        description: "Get in touch",
         path: "/contactUs"
     }
 ]

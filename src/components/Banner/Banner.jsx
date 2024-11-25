@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
-import Navbar from "./Navbar";
+import Navbar, { navItem } from "./Navbar";
 import logo from "../../images/BMC-logo-removebg.png"
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import BannerTitle from "../Components/BannerTitle";
+import PageTitle from "../Components/PageTitle";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import BannerTitle from "../Components/BannerTitle";
 
 
 const Banner = () => {
@@ -45,11 +46,13 @@ const Banner = () => {
                 </div>
             </div>
             <Navbar></Navbar>
-            {pathName === "/events" ? <BannerTitle title="Events" description="Discover upcoming events"></BannerTitle> : undefined}
-            {pathName === "/blog" ? <BannerTitle title="Blog" description="Read our latest blogs"></BannerTitle> : undefined}
-            {pathName === "/gallery" ? <BannerTitle title="Gallery" description="View our gallery"></BannerTitle> : undefined}
-            {pathName === "/aboutUs" ? <BannerTitle title="About Us" description="About our club"></BannerTitle> : undefined}
-            {pathName === "/contactUs" ? <BannerTitle title="Contact Us" description="Get in touch"></BannerTitle> : undefined}
+            {pathName === "/" ? <BannerTitle title="Home" description="Explore our platform"></BannerTitle> : undefined}
+
+            {navItem.map(item => <div key={item.path}>
+                {item.path === pathName ? <div>
+                    {item.path === "/" ? undefined : <PageTitle title={item.title} description={item.description}></PageTitle>}
+                </div> : undefined}
+            </div>)}
         </div>
     );
 };
