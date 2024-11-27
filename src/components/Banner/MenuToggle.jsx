@@ -2,7 +2,7 @@
 import { stagger, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Sling as Hamburger } from 'hamburger-react';
-import logo from "../../images/BMC-logo.png"
+import logo from "/public/images/BMC-logo.png"
 import { navItem } from "./Navbar";
 import Link from "next/link";
 import Image from "next/image";

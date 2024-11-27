@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import logo from "../../images/BMC-logo.png";
+import logo from "/public/images/BMC-logo.png";
 import Image from "next/image";
 import { navItem } from "../Banner/Navbar";
 import { MdEmail } from "react-icons/md";

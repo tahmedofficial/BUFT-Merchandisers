@@ -5,7 +5,7 @@ import MenuToggle from './MenuToggle';
 import Link from 'next/link';
 import Button from '../Components/Button';
 import { usePathname } from 'next/navigation';
-import logo from "../../images/BMC-logo-removebg.png";
+import logo from "/public/images/BMC-logo-removebg.png";
 import Image from 'next/image';
 
 
