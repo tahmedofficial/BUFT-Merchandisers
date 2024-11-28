@@ -14,7 +14,6 @@ import { useEffect, useState } from "react";
 const Banner = () => {
 
     const pathName = usePathname();
-    const [isReloaded, setIsReloaded] = useState(false);
     const [showImgBg, setShowImgBg] = useState(false);
 
     const parallaxStyle = {
@@ -27,26 +26,18 @@ const Banner = () => {
     };
 
     useEffect(() => {
-
-        if (window.innerWidth >= 1024) {
-            setShowImgBg(true);
-        }
-
         const handleResize = () => {
-            const screenWidth = window.innerWidth;
-            if (screenWidth < 768 || window.innerWidth >= 1024) {
-                setIsReloaded(true);
-                window.location.reload();
+            if (window.innerWidth >= 1024) {
+                setShowImgBg(true);
+            } else {
+                setShowImgBg(false);
             }
         };
 
         window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-
-    }, [isReloaded])
+        handleResize();
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     return (
         <div style={showImgBg ? parallaxStyle : undefined}>
