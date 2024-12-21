@@ -6,10 +6,26 @@ import { useRef } from 'react';
 import Image from 'next/image';
 import bannerImg from "../../../public/images/banner-img.jpg"
 import Button from './Button';
+import Link from 'next/link';
 
 const BannerTitle = () => {
 
     const swiperRef = useRef(null);
+
+    const bannerContent = [
+        {
+            title: "Rise Above, Reach Beyond",
+            description: "Dare to dream bigger with BUFT Merchandising Club. From cutting-edge learning to exclusive networking, this is where ambition meets opportunity"
+        },
+        {
+            title: "Your Gateway to Global Impact",
+            description: "Join a community that turns ideas into reality. At BUFT Merchandising Club, we empower visionaries to excel and leave a mark in the global textile and apparel industry"
+        },
+        {
+            title: "Your Gateway to Global Impact",
+            description: "Discover a community that fuels your ambition. Dive into events, workshops, and endless learning with BUFT Merchandising Club"
+        }
+    ]
 
     return (
         <div className="text-center space-y-3 text-white">
@@ -29,39 +45,19 @@ const BannerTitle = () => {
                         modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >
-                        <SwiperSlide>
-                            <div>
-                                <div className="space-y-2">
-                                    <h1 className="text-2xl">Rise Above, Reach Beyond</h1>
-                                    <h3 className='text-sm'>Dare to dream bigger with BUFT Merchandising Club. From cutting-edge learning to exclusive networking, this is where ambition meets opportunity</h3>
+                        {
+                            bannerContent.map((content, length) => <SwiperSlide key={length}>
+                                <div>
+                                    <div className="space-y-2">
+                                        <h1 className="text-2xl">{content.title}</h1>
+                                        <h3 className='text-sm'>{content.description}</h3>
+                                    </div>
+                                    <div className='py-5'>
+                                        <Link href="/aboutUs"><Button text="About"></Button></Link>
+                                    </div>
                                 </div>
-                                <div className='py-5'>
-                                    <Button text="About"></Button>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div>
-                                <div className='space-y-2'>
-                                    <h1 className="text-2xl">Your Gateway to Global Impact</h1>
-                                    <h3 className='text-sm'>Join a community that turns ideas into reality. At BUFT Merchandising Club, we empower visionaries to excel and leave a mark in the global textile and apparel industry</h3>
-                                </div>
-                                <div className='py-5'>
-                                    <Button text="About"></Button>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div>
-                                <div className='space-y-2'>
-                                    <h1 className="text-2xl">Where Passion Meets Opportunity</h1>
-                                    <h3 className='text-sm'>Discover a community that fuels your ambition. Dive into events, workshops, and endless learning with BUFT Merchandising Club</h3>
-                                </div>
-                                <div className='py-5'>
-                                    <Button text="About"></Button>
-                                </div>
-                            </div>
-                        </SwiperSlide>
+                            </SwiperSlide>)
+                        }
                     </Swiper>
                 </div>
             </div>
@@ -77,39 +73,19 @@ const BannerTitle = () => {
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
                 >
-                    <SwiperSlide>
-                        <div className='py-10'>
-                            <div className="space-y-4">
-                                <h1 className="text-3xl lg:text-5xl">Rise Above, Reach Beyond</h1>
-                                <h3>Dare to dream bigger with BUFT Merchandising Club. From cutting-edge learning to exclusive networking, this is where ambition meets opportunity</h3>
+                    {
+                        bannerContent.map((content, length) => <SwiperSlide key={length}>
+                            <div className='py-10'>
+                                <div className="space-y-4">
+                                    <h1 className="text-3xl lg:text-5xl">{content.title}</h1>
+                                    <h3>{content.description}</h3>
+                                </div>
+                                <div className='mt-5'>
+                                    <Link href="/aboutUs"><Button text="About"></Button></Link>
+                                </div>
                             </div>
-                            <div className='mt-5'>
-                                <Button text="About"></Button>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="py-10">
-                            <div className='space-y-4'>
-                                <h1 className="text-3xl lg:text-5xl">Your Gateway to Global Impact</h1>
-                                <h3>Join a community that turns ideas into reality. At BUFT Merchandising Club, we empower visionaries to excel and leave a mark in the global textile and apparel industry</h3>
-                            </div>
-                            <div className='mt-5'>
-                                <Button text="About"></Button>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="py-10">
-                            <div className='space-y-4'>
-                                <h1 className="text-3xl lg:text-5xl">Where Passion Meets Opportunity</h1>
-                                <h3>Discover a community that fuels your ambition. Dive into events, workshops, and endless learning with BUFT Merchandising Club</h3>
-                            </div>
-                            <div className='mt-5'>
-                                <Button text="About"></Button>
-                            </div>
-                        </div>
-                    </SwiperSlide>
+                        </SwiperSlide>)
+                    }
                 </Swiper>
             </div>
         </div>

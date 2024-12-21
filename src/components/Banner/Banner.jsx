@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import Navbar, { navItem } from "./Navbar";
-import logo from "/public/images/BMC-logo.png"
+import logo from "/public/images/BMC-logo.png";
+import profileImg from "/public/images/profile-img.webp";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import PageTitle from "../Components/PageTitle";
@@ -20,9 +21,7 @@ const Banner = () => {
         backgroundImage: `url("/images/banner-img.jpg")`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundSize: '100%',
         animation: 'bgZoom 10s infinite alternate',
-        width: '100vw',
     };
 
     useEffect(() => {
@@ -53,7 +52,7 @@ const Banner = () => {
                                 <Link href="https://www.linkedin.com/company/buft-merchandising-club/">
                                     <FaLinkedinIn className="hover:text-btnColor duration-300 text-xl" />
                                 </Link>
-                                <Link href="">
+                                <Link href="http://preview.themeforest.net/item/lamaro-yacht-club-wordpress-theme/full_screen_preview/23080232?_ga=2.59328554.64200146.1732307708-1977593532.1732307708">
                                     <FaXTwitter className="hover:text-btnColor duration-300 text-xl" />
                                 </Link>
                                 <Link href="https://www.instagram.com/buft.bmc/">
@@ -65,9 +64,7 @@ const Banner = () => {
                             <Image src={logo} width="200" height="auto" alt="Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club"></Image>
                         </div>
                         <div className="flex justify-center">
-                            <div className="bg-gray-600 h-16 w-16 rounded-full flex items-center justify-center text-white">
-                                <h3>p</h3>
-                            </div>
+                            <Image className="rounded-full w-14 h-14" src={profileImg} width="auto" height="auto" alt="profile picture"></Image>
                         </div>
                     </div>
                 </div>
