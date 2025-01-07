@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <header>
           <Banner></Banner>
         </header>
-        <main>
+        <main className="md:w-5/6 mx-auto p-3 md:p-0">
           {children}
         </main>
         <footer>

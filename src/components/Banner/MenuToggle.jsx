@@ -2,7 +2,7 @@
 import { stagger, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Sling as Hamburger } from 'hamburger-react';
-import logo from "/public/images/BMC-logo.png"
+import logo from "/public/images/logo.jpg"
 import { navItem } from "./Navbar";
 import Link from "next/link";
 import Image from "next/image";
@@ -81,7 +81,7 @@ const MenuToggle = ({ isOpen, setOpen, pathName }) => {
         <div ref={scope}>
             <nav className={isClosed ? "bg-foreground absolute z-10 w-full h-full px-5" : "hidden"}>
                 <div className="relative">
-                    <div className="flex justify-center p-5">
+                    <div className="flex justify-center py-14">
                         <Image src={logo} width="150" height="auto" alt='Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club'></Image>
                     </div>
                     <div className="absolute top-16 text-white bg-btnColor">

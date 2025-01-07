@@ -5,7 +5,7 @@ import MenuToggle from './MenuToggle';
 import Link from 'next/link';
 import Button from '../Components/Button';
 import { usePathname } from 'next/navigation';
-import logo from "/public/images/BMC-logo-removebg.png";
+import logo from "/public/images/logo.jpg";
 import Image from 'next/image';
 
 
@@ -48,14 +48,17 @@ const Navbar = () => {
 
 
     return (
-        <div className='md:w-5/6 mx-auto bg-white py-1'>
+        <div className='md:w-5/6 mx-auto bg-black text-white py-1'>
             <div className='lg:hidden'>
                 <MenuToggle isOpen={isOpen} setOpen={setOpen} pathName={pathName}></MenuToggle>
             </div>
             <div className="navbar">
                 <div className="navbar-start">
-                    <div className={isOpen ? "hidden text-black" : "lg:hidden text-black"}>
+                    <div className={isOpen ? "hidden text-white" : "lg:hidden text-white"}>
                         <Hamburger size={20} toggled={isOpen} toggle={setOpen} />
+                    </div>
+                    <div className='hidden lg:block px-10'>
+                        <Image src={logo} width="80" height="auto" alt='Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club'></Image>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">

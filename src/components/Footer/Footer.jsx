@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import logo from "/public/images/BMC-logo.png";
+import logo from "/public/images/logo.jpg";
 import Image from "next/image";
 import { navItem } from "../Banner/Navbar";
 import { MdEmail } from "react-icons/md";
@@ -46,6 +46,7 @@ const Footer = () => {
                 <div className="flex flex-col lg:flex-row gap-8 justify-around">
                     <div>
                         <Image className="rounded-2xl" width="120" height="auto" src={logo} alt="Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club"></Image>
+                        <h3>CurveWear</h3>
                         <h3 className="lg:w-96 text-sm text-zinc-300 mt-5">Join the BUFT Merchandising Club—a vibrant space for creativity, networking, and industry leadership in fashion and textiles. Connect with like-minded innovators, stay updated on events and opportunities, and build lasting relationships. Shape your future while transforming the world of merchandising</h3>
                     </div>
                     <div className="flex flex-col gap-2">
@@ -56,21 +57,21 @@ const Footer = () => {
                         <h1 className="text-3xl font-medium">Contact</h1>
                         <div className="flex items-center gap-3">
                             <span><MdEmail className="text-xl" /></span>
-                            <h3 className="text-zinc-300">bmc@info.com</h3>
+                            <h3 className="text-zinc-300">info@buft.edu.bd</h3>
                         </div>
                         <div className="flex items-center gap-3">
                             <span><FaPhoneSquareAlt className="text-xl" /></span>
-                            <h3 className="text-zinc-300">+880 1783160826</h3>
+                            <h3 className="text-zinc-300">+880 1810063355, 9606808080</h3>
                         </div>
                         <div className="flex items-center gap-3 w-80">
                             <span><FaLocationDot className="text-xl" /></span>
-                            <h3 className="text-zinc-300">V9P6+284, Nishatnagar, Turag, Dhaka 1230</h3>
+                            <h3 className="text-zinc-300">Nishatnagar, Turag, Dhaka 1230</h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="text-center py-16">
-                <h3 className="px-3 text-zinc-300">Copyright © {new Date().getFullYear()} - All right reserved by BUFT Merchandising Club</h3>
+                <h3 className="px-3 text-zinc-300">Copyright © {new Date().getFullYear()} - All right reserved by BGMEA University of Fashion & Technology</h3>
             </div>
         </div>
     );

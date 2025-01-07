@@ -8,23 +8,23 @@ import { useState } from "react";
 
 const Events = () => {
 
-    const [borderId, setBorderId] = useState(0);
+    const [borderId, setBorderId] = useState("");
 
     const eventData = [
         {
-            id: 1,
+            id: "1",
             img: img1,
             title: "Mastering the Art of Apparel Merchandising: A Professional Summit",
             description: "Dive into the world of apparel merchandising with this exclusive event tailored for aspiring and established professionals. Gain valuable insights from industry leaders, discover sustainable practices, and learn how to navigate global market dynamics effectively.",
         },
         {
-            id: 2,
+            id: "2",
             img: img2,
             title: "Innovative Trends in Fashion Merchandising: 2024 Showcase",
             description: "Discover cutting-edge techniques and emerging trends in fashion merchandising. Engage with experts, network with peers, and explore the innovations shaping the industry's future.",
         },
         {
-            id: 3,
+            id: "3",
             img: img3,
             title: "Sustainability in Apparel Merchandising: A Green Future",
             description: "Learn how to integrate sustainability into apparel merchandising practices. Join industry leaders as they share insights on eco-friendly strategies and market dynamics.",
@@ -35,13 +35,13 @@ const Events = () => {
         const image = e.currentTarget.querySelector("img");
         image.style.transform = "scale(1.1)";
         image.style.transition = "transform 0.3s ease";
-        setBorderId(parseInt(image.id));
+        setBorderId(image.id);
     };
 
     const handleMouseLeave = (e) => {
         const image = e.currentTarget.querySelector("img");
         image.style.transform = "scale(1)";
-        setBorderId(0);
+        setBorderId("");
     };
 
     return (

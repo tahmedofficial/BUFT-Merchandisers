@@ -40,9 +40,9 @@ const Banner = () => {
 
     return (
         <div style={showImgBg ? parallaxStyle : undefined}>
-            <div className="lg:bg-black lg:bg-opacity-50">
+            <div className="lg:bg-black lg:bg-opacity-30">
                 <div className="hidden lg:block">
-                    <div className="grid grid-cols-3 items-center py-6">
+                    <div className="grid grid-cols-3 items-center py-20">
                         <div className="flex items-center gap-8 justify-center">
                             <h2 className="text-btnColor">Follow us —</h2>
                             <div className="flex gap-3 items-center text-white">
@@ -59,9 +59,6 @@ const Banner = () => {
                                     <FaInstagram className="hover:text-btnColor duration-300 text-xl" />
                                 </Link>
                             </div>
-                        </div>
-                        <div className="flex justify-center">
-                            <Image src={logo} width="200" height="auto" alt="Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club"></Image>
                         </div>
                         <div className="flex justify-center">
                             <Image className="rounded-full w-14 h-14" src={profileImg} width="auto" height="auto" alt="profile picture"></Image>
