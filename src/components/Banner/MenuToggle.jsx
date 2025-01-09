@@ -84,12 +84,12 @@ const MenuToggle = ({ isOpen, setOpen, pathName }) => {
                     <div className="flex justify-center py-14">
                         <Image src={logo} width="150" height="auto" alt='Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club'></Image>
                     </div>
-                    <div className="absolute top-16 text-white bg-btnColor">
+                    <div className="absolute top-16 text-foreground bg-white">
                         <Hamburger size={24} toggled={isOpen} toggle={setOpen} />
                     </div>
                 </div>
                 <ul className="space-y-2 text-white">
-                    {navItem.map(item => <li onClick={() => setOpen(false)} className={item.path === pathName ? "bg-btnColor py-2 px-3" : ""} style={{ transformOrigin: '-20px 50%' }} key={item.path}>
+                    {navItem.map(item => <li onClick={() => setOpen(false)} className={item.path === pathName ? "bg-white text-black duration-300 py-2 px-3" : ""} style={{ transformOrigin: '-20px 50%' }} key={item.path}>
                         <Link href={item.path}>{item.title}</Link>
                     </li>)}
                 </ul>

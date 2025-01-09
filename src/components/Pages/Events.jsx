@@ -62,7 +62,7 @@ const Events = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={`h-1 duration-300 ${event.id === borderId ? "bg-btnColor" : "bg-white"}`}></div>
+                    <div className={`h-1 duration-300 ${event.id === borderId ? "bg-foreground" : "bg-white"}`}></div>
                 </div>
             ))}
         </div>

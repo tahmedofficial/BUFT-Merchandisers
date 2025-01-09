@@ -3,10 +3,10 @@ import { Sling as Hamburger } from 'hamburger-react';
 import { useState } from "react";
 import MenuToggle from './MenuToggle';
 import Link from 'next/link';
-import Button from '../Components/Button';
 import { usePathname } from 'next/navigation';
 import logo from "/public/images/logo.jpg";
 import Image from 'next/image';
+import Button2 from '../Components/Button2';
 
 
 export const navItem = [
@@ -70,7 +70,7 @@ const Navbar = () => {
                     <Image src={logo} width="80" height="auto" alt='Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club'></Image>
                 </div>
                 <div className="navbar-end">
-                    <Button text="Login"></Button>
+                    <Button2 text="login"></Button2>
                 </div>
             </div>
         </div>
