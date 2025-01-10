@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Navbar, { navItem } from "./Navbar";
-import logo from "/public/images/BMC-logo.png";
 import profileImg from "/public/images/profile-img.webp";
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -42,7 +41,7 @@ const Banner = () => {
         <div style={showImgBg ? parallaxStyle : undefined}>
             <div className="lg:bg-black lg:bg-opacity-30">
                 <div className="hidden lg:block">
-                    <div className="grid grid-cols-3 items-center py-20">
+                    <div className="flex justify-around py-20">
                         <div className="flex items-center gap-8 justify-center">
                             <h2 className="text-btnColor">Follow us —</h2>
                             <div className="flex gap-3 items-center text-white">

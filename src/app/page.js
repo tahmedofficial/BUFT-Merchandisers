@@ -1,10 +1,10 @@
-import Events from "@/components/Pages/Events";
+import Products from "@/components/Pages/Products";
 
 export default function Home() {
 
   return (
     <section>
-      <Events></Events>
+      <Products></Products>
     </section>
   );
 }

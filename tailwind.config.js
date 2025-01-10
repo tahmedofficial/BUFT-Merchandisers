@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primaryColor: "#CEBD88",
-        btnColor: "#CEBD88",
+        btnColor: "#D4bca4",
         textColor: "#28364B",
         background: "#F1F0E8",
         foreground: "#000000",

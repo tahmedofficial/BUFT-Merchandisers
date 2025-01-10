@@ -15,9 +15,9 @@ export const navItem = [
         path: "/"
     },
     {
-        title: "Events",
-        description: "Discover upcoming events",
-        path: "/events"
+        title: "Products",
+        description: "Our latest products",
+        path: "/products"
     },
     {
         title: "Blog",

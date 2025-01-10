@@ -14,16 +14,16 @@ const BannerTitle = () => {
 
     const bannerContent = [
         {
-            title: "Rise Above, Reach Beyond",
-            description: "Dare to dream bigger with BUFT Merchandising Club. From cutting-edge learning to exclusive networking, this is where ambition meets opportunity"
+            title: "Premium Textile Manufacturer for Global Brands",
+            description: "Our factory specializes in delivering premium-quality textiles, catering to renowned global brands. With a focus on innovation and sustainability, we ensure every product meets the highest standards of excellence"
         },
         {
-            title: "Your Gateway to Global Impact",
-            description: "Join a community that turns ideas into reality. At BUFT Merchandising Club, we empower visionaries to excel and leave a mark in the global textile and apparel industry"
+            title: "High-Quality Apparel for Leading Fashion Brands",
+            description: "As a reliable supplier for international fashion leaders, we craft high-quality apparel and textiles designed to meet global standards. Partner with us for unmatched expertise and commitment"
         },
         {
-            title: "Your Gateway to Global Impact",
-            description: "Discover a community that fuels your ambition. Dive into events, workshops, and endless learning with BUFT Merchandising Club"
+            title: "Innovating Textile Manufacturing for Fashion Giants",
+            description: "We combine craftsmanship with cutting-edge technology to produce world-class textiles for industry giants. We bring your fashion ideas to life"
         }
     ]
 
@@ -52,7 +52,7 @@ const BannerTitle = () => {
                                         <h1 className="text-2xl">{content.title}</h1>
                                         <h3 className='text-sm'>{content.description}</h3>
                                     </div>
-                                    <div className='py-5'>
+                                    <div className='py-5 hidden lg:block'>
                                         <Link href="/aboutUs"><Button text="About"></Button></Link>
                                     </div>
                                 </div>

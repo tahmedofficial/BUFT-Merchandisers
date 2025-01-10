@@ -17,25 +17,25 @@ const Footer = () => {
             <div className="border-b border-gray-400">
                 <div className="flex justify-around py-12 md:w-5/6 mx-auto">
                     <div className="flex gap-4 items-center">
-                        <Link className="border p-4 rounded-full text-xl hover:bg-white hover:text-foreground duration-500" href="https://www.facebook.com/buftmerchandisingclub">
+                        <Link className="border p-4 rounded-full text-xl hover:bg-white hover:text-foreground duration-500" href="https://www.facebook.com/bgmeauniversitybd">
                             <FaFacebookF />
                         </Link>
                         <h3 className="hidden lg:block">Facebook</h3>
                     </div>
                     <div className="flex gap-4 items-center">
-                        <Link className="border p-4 rounded-full text-xl hover:bg-white hover:text-foreground duration-500" href="https://www.linkedin.com/company/buft-merchandising-club/">
+                        <Link className="border p-4 rounded-full text-xl hover:bg-white hover:text-foreground duration-500" href="https://www.linkedin.com/school/bgmea-university-of-fashion-and-technology/">
                             <FaLinkedinIn />
                         </Link>
                         <h3 className="hidden lg:block">Linkedin</h3>
                     </div>
                     <div className="flex gap-4 items-center">
-                        <Link className="border p-4 rounded-full text-xl hover:bg-white hover:text-foreground duration-500" href="">
+                        <Link className="border p-4 rounded-full text-xl hover:bg-white hover:text-foreground duration-500" href="https://x.com/BgmeaUniversity">
                             <FaXTwitter />
                         </Link>
                         <h3 className="hidden lg:block">X</h3>
                     </div>
                     <div className="flex gap-4 items-center">
-                        <Link className="border p-4 rounded-full text-xl hover:bg-white hover:text-foreground duration-500" href="https://www.instagram.com/buft.bmc/">
+                        <Link className="border p-4 rounded-full text-xl hover:bg-white hover:text-foreground duration-500" href="https://www.instagram.com/bgmeauniversity/">
                             <FaInstagram />
                         </Link>
                         <h3 className="hidden lg:block">Instagram</h3>
@@ -45,9 +45,9 @@ const Footer = () => {
             <div className="md:w-5/6 mx-auto px-4 lg:px-0 pt-12">
                 <div className="flex flex-col lg:flex-row gap-8 justify-around">
                     <div>
-                        <Image className="rounded-2xl" width="120" height="auto" src={logo} alt="Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club"></Image>
+                        <Image className="rounded-2xl w-36" width="auto" height="auto" src={logo} alt="Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club"></Image>
                         {/* <h3>CurveWear</h3> */}
-                        <h3 className="lg:w-96 text-sm text-zinc-300 mt-5">Join the BUFT Merchandising Club—a vibrant space for creativity, networking, and industry leadership in fashion and textiles. Connect with like-minded innovators, stay updated on events and opportunities, and build lasting relationships. Shape your future while transforming the world of merchandising</h3>
+                        <h3 className="lg:w-96 text-sm text-zinc-300 mt-5">We are a leading textile manufacturer specializing in high-quality fabrics and apparel for global markets. With a strong focus on precision, sustainability, and innovation, we strive to exceed industry standards. Our expertise lies in crafting tailored solutions to meet the unique needs of fashion brands worldwide. Partner with us for reliable service, exceptional quality, and a commitment to excellence in every thread</h3>
                     </div>
                     <div className="flex flex-col gap-2">
                         <h1 className="text-3xl font-medium">Links</h1>

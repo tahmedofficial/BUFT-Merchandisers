@@ -6,8 +6,8 @@ import Footer from "@/components/Footer/Footer";
 const montserrat = Montserrat({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] })
 
 export const metadata = {
-  title: "BUFT Merchandising Club",
-  description: "Discover the BUFT Merchandising Club, fostering creativity and innovation in fashion and merchandising. Join a dynamic community of students exploring trends, building industry skills, and shaping future leaders in the apparel and textile industry. Learn, network, and grow with us!"
+  title: "BUFT-Merchandisers",
+  description: "We specialize in manufacturing premium textiles and apparel for global markets. With a focus on sustainability, innovation, and precision, we deliver exceptional fabrics tailored to meet the needs of fashion brands worldwide. Partner with us for reliable, high-quality textile solutions crafted to elevate your business"
 };
 
 export default function RootLayout({ children }) {
