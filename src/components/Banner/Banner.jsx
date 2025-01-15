@@ -45,16 +45,16 @@ const Banner = () => {
                         <div className="flex items-center gap-8 justify-center">
                             <h2 className="text-btnColor">Follow us —</h2>
                             <div className="flex gap-3 items-center text-white">
-                                <Link href="https://www.facebook.com/buftmerchandisingclub">
+                                <Link href="https://www.facebook.com/bgmeauniversitybd">
                                     <FaFacebookF className="hover:text-btnColor duration-300 text-xl" />
                                 </Link>
-                                <Link href="https://www.linkedin.com/company/buft-merchandising-club/">
+                                <Link href="https://www.linkedin.com/school/bgmea-university-of-fashion-and-technology/">
                                     <FaLinkedinIn className="hover:text-btnColor duration-300 text-xl" />
                                 </Link>
                                 <Link href="http://preview.themeforest.net/item/lamaro-yacht-club-wordpress-theme/full_screen_preview/23080232?_ga=2.59328554.64200146.1732307708-1977593532.1732307708">
                                     <FaXTwitter className="hover:text-btnColor duration-300 text-xl" />
                                 </Link>
-                                <Link href="https://www.instagram.com/buft.bmc/">
+                                <Link href="https://www.instagram.com/bgmeauniversity/">
                                     <FaInstagram className="hover:text-btnColor duration-300 text-xl" />
                                 </Link>
                             </div>
