@@ -24,10 +24,10 @@ const Products = () => {
 
 
     return (
-        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-20">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-20 lg:py-20">
             {productsData.map((product, index) => (
-                <Link key={product.id} href={`/products/${product.slug}`}>
-                    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <div key={product.id} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                    <Link href={`/products/${product.slug}`}>
                         <div className="flex flex-col h-full bg-white p-5">
                             <div className="overflow-hidden rounded-lg mb-6">
                                 <Image id={index + 1} className="w-full object-cover" src={product.img} width="auto" height="auto" alt={product.description} />
@@ -43,8 +43,8 @@ const Products = () => {
                             </div>
                         </div>
                         <div className={`h-1 duration-300 ${product.id === borderId ? "bg-foreground" : "bg-white"}`}></div>
-                    </div>
-                </Link>
+                    </Link>
+                </div>
             ))}
         </div>
     );

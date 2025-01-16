@@ -63,7 +63,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex gap-10 text-lg">
-                        {navItem.map(item => <li className={item.path === pathName ? "text-btnColor" : ""} key={item.path}><Link href={item.path}>{item.title}</Link></li>)}
+                        {navItem.map(item => <li className={item.path === pathName ? "text-btnColor px-2" : "hover:bg-white hover:text-black duration-300 px-2 rounded-lg"} key={item.path}><Link href={item.path}>{item.title}</Link></li>)}
                     </ul>
                 </div>
                 <div className='lg:hidden'>
