@@ -6,6 +6,7 @@ import img3 from "../../../../public/images/blogImg3.png";
 export const blogs = [
     {
         date: "2 December 2024",
+        writer: "Tanvir Ahmed",
         img: img1,
         title: "The Role of Merchandisers in the Global Textile Industry",
         slug: "role-of-merchandisers-in-global-textile-industry",
@@ -13,6 +14,7 @@ export const blogs = [
     },
     {
         date: "5 January 2025",
+        writer: "Tanvir Ahmed",
         img: img2,
         title: "Sustainable Practices in Textile Merchandising: A Guide for the Future",
         slug: "sustainable-practices-in-textile-merchandising",
@@ -20,6 +22,7 @@ export const blogs = [
     },
     {
         date: "3 February 2025",
+        writer: "Tanvir Ahmed",
         img: img3,
         title: "Innovations Driving the Future of the Textile Industry",
         slug: "innovations-driving-future-of-textile-industry",
