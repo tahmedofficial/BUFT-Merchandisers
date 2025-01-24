@@ -1,5 +1,4 @@
 import React from 'react';
-import { productsData } from './Products';
 import Image from 'next/image';
 
 const ProductDetails = ({ product }) => {
