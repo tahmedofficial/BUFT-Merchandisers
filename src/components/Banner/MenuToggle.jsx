@@ -2,7 +2,7 @@
 import { stagger, useAnimate } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Sling as Hamburger } from 'hamburger-react';
-import logo from "/public/images/logo.jpg"
+import logo from "/public/images/trust-trade-logo.png"
 import { navItem } from "./Navbar";
 import Link from "next/link";
 import Image from "next/image";
@@ -79,17 +79,17 @@ const MenuToggle = ({ isOpen, setOpen, pathName }) => {
 
     return (
         <div ref={scope}>
-            <nav className={isClosed ? "bg-foreground absolute z-10 w-full h-full px-5" : "hidden"}>
+            <nav className={isClosed ? "bg-white absolute z-10 w-full h-full px-5" : "hidden"}>
                 <div className="relative">
-                    <div className="flex justify-center py-14">
+                    <div className="flex justify-center pt-8 pb-5">
                         <Image src={logo} width="150" height="auto" alt='Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club'></Image>
                     </div>
-                    <div className="absolute top-16 text-foreground bg-white">
+                    <div className="absolute top-16 text-white bg-primaryColor">
                         <Hamburger size={24} toggled={isOpen} toggle={setOpen} />
                     </div>
                 </div>
-                <ul className="space-y-2 text-white">
-                    {navItem.map(item => <li onClick={() => setOpen(false)} className={item.path === pathName ? "bg-white text-black duration-300 py-2 px-3" : ""} style={{ transformOrigin: '-20px 50%' }} key={item.path}>
+                <ul className="space-y-2 text-primaryColor">
+                    {navItem.map(item => <li onClick={() => setOpen(false)} className={item.path === pathName ? "bg-primaryColor text-white duration-300 py-2 px-3" : ""} style={{ transformOrigin: '-20px 50%' }} key={item.path}>
                         <Link href={item.path}>{item.title}</Link>
                     </li>)}
                 </ul>

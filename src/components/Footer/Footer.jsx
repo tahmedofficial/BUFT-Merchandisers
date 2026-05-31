@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import logo from "/public/images/logo.jpg";
+import logo from "/public/images/trust-trade-logo.png";
 import Image from "next/image";
 import { navItem } from "../Banner/Navbar";
 import { MdEmail } from "react-icons/md";
@@ -13,7 +13,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
 
     return (
-        <div className="bg-foreground text-white">
+        <div className="bg-thirdColor text-white">
             <div className="border-b border-gray-400">
                 <div className="flex justify-around py-12 md:w-5/6 mx-auto">
                     <div className="flex gap-4 items-center">
