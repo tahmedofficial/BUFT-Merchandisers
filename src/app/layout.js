@@ -6,7 +6,7 @@ import Footer from "@/components/Footer/Footer";
 const montserrat = Montserrat({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] })
 
 export const metadata = {
-  title: "BUFT-Merchandisers",
+  title: "Trust Trade International",
   description: "We specialize in manufacturing premium textiles and apparel for global markets. With a focus on sustainability, innovation, and precision, we deliver exceptional fabrics tailored to meet the needs of fashion brands worldwide. Partner with us for reliable, high-quality textile solutions crafted to elevate your business"
 };
 

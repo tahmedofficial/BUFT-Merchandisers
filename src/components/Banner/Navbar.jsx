@@ -18,14 +18,14 @@ export const navItem = [
         path: "/"
     },
     {
-        title: "Items",
+        title: "Sourcing & Apparel",
         description: "Our latest items",
         path: "/products"
     },
     {
-        title: "Services",
+        title: "Industrial Chemicals",
         description: "Get our services",
-        path: "/blog"
+        path: "/chemicals"
     },
     {
         title: "About Us",

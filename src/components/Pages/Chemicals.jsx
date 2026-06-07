@@ -1,29 +1,18 @@
 "use client";
-import { blogs } from "@/app/blog/[blogTitle]/page";
+import { chemicals } from "@/app/chemicals/[chemicalTitle]/page";
 import Image from "next/image";
 import Button from "../Components/Button";
 import Link from "next/link";
 import { FaCalendarAlt } from "react-icons/fa";
 
-const Blog = () => {
-
-    const handleMouseEnter = (event) => {
-        const image = event.currentTarget.querySelector("img");
-        image.style.transform = "scale(1.03)";
-        image.style.transition = "transform 0.3s ease";
-    }
-
-    const handleMouseLeave = (e) => {
-        const image = e.currentTarget.querySelector("img");
-        image.style.transform = "scale(1)";
-    };
+const Chemicals = () => {
 
     return (
         <div className="lg:grid grid-cols-3 gap-5 lg:py-20">
             <div className="col-span-2 space-y-10">
                 {
-                    blogs.map(blog => <div key={blog.title}>
-                        <Link href={`/blog/${blog.slug}`}>
+                    chemicals.map(blog => <div key={blog.title}>
+                        <Link href={`/chemicals/${blog.slug}`}>
                             <div className="shadow-lg p-5 rounded-lg">
                                 <div className="bg-white p-4">
                                     <div className="overflow-hidden group">
@@ -49,8 +38,8 @@ const Blog = () => {
             </div>
             <div className="bg-white hidden lg:block">
                 {
-                    blogs.map(blog => <div key={blog.slug}>
-                        <Link href={`/blog/${blog.slug}`}>
+                    chemicals.map(blog => <div key={blog.slug}>
+                        <Link href={`/chemicals/${blog.slug}`}>
                             <div className="grid gap-3 grid-cols-3 p-4">
                                 <div className="col-span-1">
                                     <Image className="bg-background p-2" src={blog.img} alt={blog.slug}></Image>
@@ -71,4 +60,4 @@ const Blog = () => {
     );
 };
 
-export default Blog;
+export default Chemicals;
