@@ -39,24 +39,6 @@ export const navItem = [
     }
 ]
 
-const socialMedia = [
-    {
-        link: "https://www.facebook.com/bgmeauniversitybd",
-        icon: <FaFacebookF className="hover:text-seondaryColor text-thirdColor duration-300 text-xl" />
-    },
-    {
-        link: "https://www.linkedin.com/school/bgmea-university-of-fashion-and-technology/",
-        icon: <FaLinkedinIn className="hover:text-seondaryColor text-thirdColor duration-300 text-xl" />
-    },
-    {
-        link: "",
-        icon: <FaXTwitter className="hover:text-seondaryColor text-thirdColor duration-300 text-xl" />
-    },
-    {
-        link: "",
-        icon: <FaInstagram className="hover:text-seondaryColor text-thirdColor duration-300 text-xl" />
-    },
-]
 
 const Navbar = () => {
 
@@ -76,7 +58,8 @@ const Navbar = () => {
                             <Hamburger size={22} toggled={isOpen} toggle={setOpen} />
                         </div>
                         <div className='hidden lg:block'>
-                            <Image src={logo} width="80" height="auto" alt='Trust trade logo'></Image>
+                            <Image className='m-auto' src={logo} width="80" height="auto" alt='Trust trade logo'></Image>
+                            <p className='text-lg font-semibold'>Trust Trade International</p>
                         </div>
                     </div>
                     <div className="navbar-center hidden lg:flex">
@@ -86,20 +69,10 @@ const Navbar = () => {
                     </div>
                     <div className='lg:hidden'>
                         <Image src={logo} width="80" height="auto" alt='Stay connected with the BUFT Merchandising Club, your gateway to innovation and excellence in the fashion and textile industry. Join us for updates, events, and opportunities to grow your skills and network. Follow us on social media or reach out to collaborate and shape the future of merchandising. Explore, learn, and lead with BUFT Merchandising Club'></Image>
+                        <p className='ml-3 font-semibold text-lg'>Trust Trade International</p>
                     </div>
                     <div className="navbar-end">
                         <div className="hidden lg:block py-2">
-                            <div className="flex items-center gap-8 justify-center">
-                                <h2 className="text-thirdColor">Follow us —</h2>
-                                <div className="flex gap-3 items-center text-white">
-                                    {
-                                        socialMedia.map((media, index) => (<Link key={index} href={media.link}>
-                                            {media.icon}
-                                        </Link>))
-                                    }
-                                </div>
-                            </div>
-
                             <div className='text-thirdColor mt-2'>
                                 <div className="flex items-center gap-3">
                                     <span><MdEmail className="text-xl" /></span>
