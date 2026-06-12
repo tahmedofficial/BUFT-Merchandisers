@@ -1,12 +1,14 @@
 import ProductDetails from '@/components/Pages/ProductDetails';
-import img1 from "../../../../public/images/products/ac1.jpg"
-import img2 from "../../../../public/images/products/ac2.jpg"
-import img3 from "../../../../public/images/products/ac3.jpg"
-import img4 from "../../../../public/images/products/ac4.jpg"
-import img5 from "../../../../public/images/products/ac5.jpg"
-import img6 from "../../../../public/images/products/ac6.jpg"
-import img7 from "../../../../public/images/products/ac7.jpg"
-import img8 from "../../../../public/images/products/ac8.jpg"
+import img1 from "../../../../public/images/products/img1.avif"
+import img2 from "../../../../public/images/products/img2.png"
+import img3 from "../../../../public/images/products/corporate.png"
+import img4 from "../../../../public/images/products/swter.png"
+import img5 from "../../../../public/images/products/sports.png"
+import img6 from "../../../../public/images/products/denim.jpg"
+import img7 from "../../../../public/images/products/women.jpg"
+import img8 from "../../../../public/images/products/knit.avif"
+import img9 from "../../../../public/images/products/woven.jpeg"
+import img10 from "../../../../public/images/products/oem.png"
 
 export const productsData = [
     {
@@ -67,14 +69,14 @@ export const productsData = [
     },
     {
         id: "9",
-        img: img8,
+        img: img9,
         title: "Woven Garment Manufacturing",
         description: "Professional production of woven shirts, trousers, shorts, and uniforms. Precision cutting, stitching, and quality control ensure excellent product standards.",
         slug: "woven-garment-manufacturing",
     },
     {
         id: "10",
-        img: img8,
+        img: img10,
         title: "OEM & ODM Garment Services",
         description: "End-to-end garment manufacturing services for global brands. From concept development and sample creation to mass production and worldwide export support.",
         slug: "oem-odm-garment-services",
