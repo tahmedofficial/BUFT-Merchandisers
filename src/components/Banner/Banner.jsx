@@ -1,7 +1,6 @@
 "use client";
 import Navbar, { navItem } from "./Navbar";
 import PageTitle from "../Components/PageTitle";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import BannerTitle from "../Components/BannerTitle";
 import { useEffect, useState } from "react";
@@ -32,8 +31,6 @@ const Banner = () => {
         handleResize();
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-
-
 
     return (
         <div style={showImgBg ? parallaxStyle : undefined}>

@@ -6,8 +6,7 @@ import { navItem } from "../Banner/Navbar";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { MdOutlineFax, MdContactPhone } from "react-icons/md";
 
 
 const Footer = () => {
@@ -33,21 +32,29 @@ const Footer = () => {
                         <h1 className="text-3xl font-medium">Contact</h1>
                         <div className="flex items-center gap-3">
                             <span><MdEmail className="text-xl" /></span>
-                            <h3 className="text-zinc-300">info@buft.edu.bd</h3>
+                            <h3 className="text-zinc-300">info@trusttradeintl.com</h3>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span><MdContactPhone className="text-xl" /></span>
+                            <h3 className="text-zinc-300">+8802-222224659</h3>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <span><MdOutlineFax className="text-xl" /></span>
+                            <h3 className="text-zinc-300">+8802-9343628</h3>
                         </div>
                         <div className="flex items-center gap-3">
                             <span><FaPhoneSquareAlt className="text-xl" /></span>
-                            <h3 className="text-zinc-300">+880 1810063355, 9606808080</h3>
+                            <h3 className="text-zinc-300">+880 1711361268</h3>
                         </div>
                         <div className="flex items-center gap-3 w-80">
                             <span><FaLocationDot className="text-xl" /></span>
-                            <h3 className="text-zinc-300">Nishatnagar, Turag, Dhaka 1230</h3>
+                            <h3 className="text-zinc-300">224/1 North Shahjahanpur, Shantinagar, Dhaka 1217, Bangladesh</h3>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="text-center py-16">
-                <h3 className="px-3 text-zinc-300">Copyright © {new Date().getFullYear()} - All right reserved by BGMEA University of Fashion & Technology</h3>
+                <h3 className="px-3 text-zinc-300">Copyright © {new Date().getFullYear()} - All right reserved by Trust Trade International</h3>
             </div>
         </div>
     );

@@ -6,8 +6,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import logo from "/public/images/trust-trade-logo.png";
 import Image from 'next/image';
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 
@@ -76,11 +74,11 @@ const Navbar = () => {
                             <div className='text-thirdColor mt-2'>
                                 <div className="flex items-center gap-3">
                                     <span><MdEmail className="text-xl" /></span>
-                                    <h3>info@trusttrade.com</h3>
+                                    <h3>info@trusttradeintl.com</h3>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <span><FaPhoneSquareAlt className="text-xl" /></span>
-                                    <h3>+880 1763374567</h3>
+                                    <h3>+8802-222224659, +880 1711361268</h3>
                                 </div>
                             </div>
                         </div>
