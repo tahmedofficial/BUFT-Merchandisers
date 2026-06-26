@@ -27,7 +27,7 @@ export const navItem = [
     },
     {
         title: "About Us",
-        description: "About our club",
+        description: "About Trust Trade International",
         path: "/aboutUs"
     },
     {

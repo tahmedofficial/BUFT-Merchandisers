@@ -17,6 +17,9 @@ export const productsData = [
         title: "T-Shirt Manufacturing",
         description: "High-quality custom T-shirts made from premium cotton, polyester, or blended fabrics. Available in various colors, sizes, GSM, and printing options including screen print, DTG, embroidery, and heat transfer. Suitable for brands, corporate uniforms, and promotional campaigns.",
         slug: "t-shirt-manufacturing",
+        minimumOrder: "1000 Pieces",
+        exportMarkets: "Worldwide",
+        fabricType: "As Per Buyer's Requirement"
     },
     {
         id: "2",
@@ -24,6 +27,9 @@ export const productsData = [
         title: "Polo Shirt Production",
         description: "Premium polo shirts manufactured with breathable fabrics and durable stitching. Customize fabric type, color, logo embroidery, buttons, and sizing according to your brand requirements.",
         slug: "polo-shirt-production",
+        minimumOrder: "1000 Pieces",
+        exportMarkets: "Worldwide",
+        fabricType: "As Per Buyer's Requirement"
     },
     {
         id: "3",
@@ -31,6 +37,9 @@ export const productsData = [
         title: "Corporate Uniform Manufacturing",
         description: "Professional uniforms designed for offices, hotels, restaurants, security services, and industrial workers. Custom branding, fabric selection, and bulk production available.",
         slug: "corporate-uniform-anufacturing",
+        minimumOrder: "200 Pieces",
+        exportMarkets: "Worldwide",
+        fabricType: "As Per Buyer's Requirement"
     },
     {
         id: "4",
@@ -38,6 +47,9 @@ export const productsData = [
         title: "Hoodie & Sweatshirt Manufacturing",
         description: "Custom hoodies and sweatshirts produced with high-quality fleece and cotton fabrics. Available in pullover and zip-up styles with custom printing and embroidery options.",
         slug: "hoodie-sweatshirt-manufacturing",
+        minimumOrder: "700 Pieces",
+        exportMarkets: "Worldwide",
+        fabricType: "As Per Buyer's Requirement"
     },
     {
         id: "5",
@@ -45,6 +57,9 @@ export const productsData = [
         title: "Sportswear Manufacturing",
         description: "Performance sportswear including jerseys, shorts, tracksuits, and activewear. Moisture-wicking fabrics, sublimation printing, and full customization available for teams and brands.",
         slug: "sportswear-manufacturing",
+        minimumOrder: "200 Pieces",
+        exportMarkets: "Worldwide",
+        fabricType: "As Per Buyer's Requirement"
     },
     {
         id: "6",
@@ -52,6 +67,9 @@ export const productsData = [
         title: "Denim Jeans Production",
         description: "Manufacture premium denim jeans with custom washes, fits, stitching patterns, and branding. Suitable for fashion brands seeking reliable bulk production.",
         slug: "denim-jeans-production",
+        minimumOrder: "700 Pieces",
+        exportMarkets: "Worldwide",
+        fabricType: "As Per Buyer's Requirement"
     },
     {
         id: "7",
@@ -59,6 +77,9 @@ export const productsData = [
         title: "Women's Fashion Apparel Manufacturing",
         description: "Production of dresses, tops, skirts, blouses, and fashion garments with customizable fabrics, trims, and finishing according to your design specifications.",
         slug: "women-fsashion-apparel-manufacturing",
+        minimumOrder: "1000 Pieces",
+        exportMarkets: "Worldwide",
+        fabricType: "As Per Buyer's Requirement"
     },
     {
         id: "8",
@@ -66,6 +87,9 @@ export const productsData = [
         title: "Knitwear Manufacturing",
         description: "Expert manufacturing of knit garments including T-shirts, polo shirts, tank tops, and casual wear. High-quality knitting, dyeing, and finishing services available.",
         slug: "knitwear-manufacturing",
+        minimumOrder: "1000 Pieces",
+        exportMarkets: "Worldwide",
+        fabricType: "As Per Buyer's Requirement"
     },
     {
         id: "9",
@@ -73,6 +97,9 @@ export const productsData = [
         title: "Woven Garment Manufacturing",
         description: "Professional production of woven shirts, trousers, shorts, and uniforms. Precision cutting, stitching, and quality control ensure excellent product standards.",
         slug: "woven-garment-manufacturing",
+        minimumOrder: "1000 Pieces",
+        exportMarkets: "Worldwide",
+        fabricType: "As Per Buyer's Requirement"
     },
     {
         id: "10",

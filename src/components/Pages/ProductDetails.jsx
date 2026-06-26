@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const ProductDetails = ({ product }) => {
 
-    const { title, description, slug, img } = product;
+    const { title, description, slug, img, minimumOrder, exportMarkets, fabricType } = product;
 
     return (
         <div className='grid grid-cols-1 lg:grid-cols-2'>
@@ -15,10 +15,9 @@ const ProductDetails = ({ product }) => {
                     <h1 className='text-2xl md:text-3xl lg:text-4xl'>{title}</h1>
                     <h3>{description}</h3>
                     <div className='space-y-2'>
-                        <h3>Minimum order 10000</h3>
-                        <h3>GSM: 150</h3>
-                        <h3>Fabric: Knit</h3>
-                        <h3>Button: 5</h3>
+                        <h3>Minimum order {minimumOrder}</h3>
+                        <h3>Fabric: {fabricType}</h3>
+                        <h3>Export: {exportMarkets}</h3>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import Location from "../Components/Location";
 const Contact = () => {
 
     return (
-        <div>
+        <div className="lg:py-20">
             <Location></Location>
         </div>
     );
